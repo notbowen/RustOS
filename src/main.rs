@@ -11,12 +11,16 @@ use core::panic::PanicInfo;
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    println!("Hello from _start!");
-    println!("Here are some numbers: {}, {}", 1337, 0.1 + 0.2);
+    println!("Hello World!");
+
+    rust_os::init();
+
+    x86_64::instructions::interrupts::int3();
 
     #[cfg(test)]
     test_main();
 
+    println!("On god it did not crash!!");
     loop {}
 }
 

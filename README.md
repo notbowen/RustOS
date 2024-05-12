@@ -5,7 +5,7 @@ New updates coming soon :)
 
 ## To-Do
 
-- [ ] I'll add this later...
+- [ ] Implement interrupts from scratch (following [this](https://os.phil-opp.com/catching-exceptions/) tutorial of course)
 
 ## References
 
